@@ -20,7 +20,8 @@
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "chromatic": "npx chromatic --project-token=d4fabc7465e2"
+    "chromatic": "npx chromatic --project-token=d4fabc7465e2",
+    "release": "auto shipit --base-branch=main"
   },
   "peerDependencies": {
     "react": ">=16"
