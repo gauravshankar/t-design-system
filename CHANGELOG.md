@@ -2,6 +2,19 @@
 
 #### ⚠️ Pushed to `main`
 
+- Merge branch 'main' of https://github.com/gauravshankar/t-design-system into main ([@gauravshankar](https://github.com/gauravshankar))
+- auto release ([@gauravshankar](https://github.com/gauravshankar))
+
+#### Authors: 1
+
+- Gaurav ([@gauravshankar](https://github.com/gauravshankar))
+
+---
+
+# v0.1.1 (Mon Jul 05 2021)
+
+#### ⚠️ Pushed to `main`
+
 - auto release ([@gauravshankar](https://github.com/gauravshankar))
 
 #### Authors: 1
