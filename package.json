@@ -71,10 +71,16 @@
     "@storybook/node-logger": "^6.3.2",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.3.2",
+    "@tailwindcss/postcss7-compat": "^2.2.4",
     "auto": "^10.29.3",
+    "autoprefixer": "^9",
     "chromatic": "^5.9.2",
     "cross-env": "^7.0.3",
-    "prettier": "^2.3.2"
+    "postcss": "^7",
+    "prettier": "^2.3.2",
+    "rollup-plugin-postcss": "^4.0.0",
+    "tailwind-styled-components": "^2.0.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "main": "index.js",
   "author": "Gaurav Shankar",
