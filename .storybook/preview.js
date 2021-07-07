@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { GlobalStyle } from '../src/shared/global';
-
+import '../src/shared/tailwind.css';
 // Global decorator to apply the styles to all stories
 export const decorators = [
   (Story) => (
