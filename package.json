@@ -74,13 +74,16 @@
     "@tailwindcss/postcss7-compat": "^2.2.4",
     "auto": "^10.29.3",
     "autoprefixer": "^9",
+    "babel-plugin-macros": "^3.1.0",
     "chromatic": "^5.9.2",
     "cross-env": "^7.0.3",
     "postcss": "^7",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.3.2",
     "rollup-plugin-postcss": "^4.0.0",
     "tailwind-styled-components": "^2.0.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "twin.macro": "^2.6.2"
   },
   "main": "index.js",
   "author": "Gaurav Shankar",

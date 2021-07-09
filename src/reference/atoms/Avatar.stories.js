@@ -14,7 +14,7 @@ export default {
 export const Standard = (args) => <Avatar {...args} />;
 Standard.args = {
   size: 'large',
-  username: 'Tom Coleman',
+  username: 'Shweta',
   src: 'https://avatars2.githubusercontent.com/u/132554',
 };
 
