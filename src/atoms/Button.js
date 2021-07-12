@@ -17,11 +17,7 @@ import PropTypes from 'prop-types';
 
 const APPEARANCES = {
   PRIMARY: 'primary',
-  // PRIMARY_OUTLINE: 'primaryOutline',
   SECONDARY: 'secondary',
-  // SECONDARY_OUTLINE: 'secondaryOutline',
-  // TERTIARY: 'tertiary',
-  // OUTLINE: 'outline',
 };
 
 const SIZES = {
@@ -29,8 +25,13 @@ const SIZES = {
   MEDIUM: 'medium',
 };
 
+const CORNER_RADIUS = {
+  rounded: 'rounded',
+  pill: 'rounded-full'
+}
+
 export const Button = (props) => {
-	const {className = '', color = 'primary', isDisabled = false, cornerRadius, icon, iconClassName = ''} = props
+	const {className = '', color = 'primary', isDisabled = false, cornerRadius, isLoading, loadingText, iconClassName = ''} = props
 	const {label="Button", outline = false, size = '', type = 'button', onClick, title} = props;
   //Set Outline Button as per theme
   let isOutlineButton ='';
@@ -41,7 +42,12 @@ export const Button = (props) => {
   let buttonClassName = '';
   buttonClassName = ( `${isOutlineButton} ${buttonDisabled} ` + (size === 'small' ? 'px-5 py-3 ' : 'px-8 py-4 ') + `${cornerRadius} ${className}` );
 
-
+  const buttonInner = (
+    <Fragment>
+      {label + ' '}
+      {isLoading && <Fragment>{loadingText || ' Loading...'}</Fragment>}
+    </Fragment>
+  );
 
 	return (
 		<button
@@ -51,7 +57,7 @@ export const Button = (props) => {
 			onClick={onClick}
 			title={title}
 		>
-			{label}
+			{buttonInner}
 		</button>
 	)
 }
@@ -67,9 +73,11 @@ Button.propTypes = {
   
    /** Buttons that have hrefs should use <a> instead of <button>
   */
-  isLink: PropTypes.bool,
+  // isLink: PropTypes.bool,
+  /**
+    What label button has
+  */
   label: PropTypes.node.isRequired,
-  appearance: PropTypes.oneOf(Object.values(APPEARANCES)),
   /**
     Buttons that have outline and fills on hover
   */
@@ -78,26 +86,25 @@ Button.propTypes = {
   /**
    Prevents users from clicking on a button multiple times (for things like payment forms)
   */
-  isUnclickable: PropTypes.bool,
+  // isUnclickable: PropTypes.bool,
   /**
    Buttons with icons by themselves have a circular shape
   */
-  containsIcon: PropTypes.bool,
+  // containsIcon: PropTypes.bool,
   size: PropTypes.oneOf(Object.values(SIZES)),
-  ButtonWrapper: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
-  cornerRadius: PropTypes.string,
+  // ButtonWrapper: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
+  cornerRadius: PropTypes.oneOf(Object.values(CORNER_RADIUS)),
 };
 
 Button.defaultProps = {
   isLoading: false,
   loadingText: null,
   isLink: false,
-  appearance: APPEARANCES.TERTIARY,
   isDisabled: false,
   isUnclickable: false,
   containsIcon: false,
   size: SIZES.MEDIUM,
   ButtonWrapper: undefined,
   outline: false,
-  cornerRadius: 'rounded',
+  cornerRadius: CORNER_RADIUS.rounded,
 };
