@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text-base: 17, 24, 39 ; /* 17, 24, 39 #111827 coolGray - 900 */
+    --color-primary: 67, 56, 202; /* 67, 56, 202 #4338ca indigoBlue - 700 */
+    --color-secondary: 55, 65, 81; /* 55, 65, 81 #374151 coolGray - 700 */
+  }
+}

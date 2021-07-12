@@ -50,6 +50,12 @@
       ]
     ]
   },
+  "babelMacros": {
+    "twin": {
+        "config": "./tailwind.config.js",
+        "preset": "styled-components"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
