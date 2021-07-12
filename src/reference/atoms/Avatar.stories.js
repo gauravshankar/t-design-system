@@ -3,7 +3,7 @@ import React from 'react';
 import { Avatar } from './Avatar';
 
 export default {
-  title: 'Design System/Atoms/Avatar',
+  title: 'Reference Design System/Atoms/Avatar',
   component: Avatar,
   parameters: {
     componentSubtitle:

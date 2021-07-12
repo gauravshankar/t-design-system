@@ -15,7 +15,7 @@ const CustomLink = styled(Link)`
 const onLinkClick = action('onLinkClick');
 
 export default {
-  title: 'Design System/Atoms/Link',
+  title: 'Reference Design System/Atoms/Link',
   component: Link,
 };
 

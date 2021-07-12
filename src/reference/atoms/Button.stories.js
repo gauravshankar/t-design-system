@@ -18,7 +18,7 @@ function ButtonWrapper(props) {
 }
 
 export default {
-  title: 'Design System/Atoms/Button',
+  title: 'Reference Design System/Atoms/Button',
   component: Button,
 };
 
