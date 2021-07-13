@@ -21,12 +21,19 @@ module.exports = {
           primary: withOpacity('--color-primary'),
           secondary:  withOpacity('--color-secondary'),
           dark: `var(--color-text-base)`,
+          danger: withOpacity('--color-danger'),
+          white: `var(--color-white)`
       },
       },
-    },
+    boxShadow: ['active'],
+  },
+  stroke: {
+    current: 'currentColor',
+  }
   },
   variants: {
     extend: {},
+    backgroundColor: ['responsive', 'hover', 'focus', 'checked'],
   },
   plugins: [],
 }

@@ -11,6 +11,7 @@
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
     "styled-components": "^5.2.1",
+    "tailwindcss-pseudo": "^1.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -52,8 +53,8 @@
   },
   "babelMacros": {
     "twin": {
-        "config": "./tailwind.config.js",
-        "preset": "styled-components"
+      "config": "./tailwind.config.js",
+      "preset": "styled-components"
     }
   },
   "browserslist": {
@@ -89,6 +90,7 @@
     "rollup-plugin-postcss": "^4.0.0",
     "tailwind-styled-components": "^2.0.3",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "tailwindcss-pseudo-elements": "^2.0.0",
     "twin.macro": "^2.6.2"
   },
   "main": "index.js",
