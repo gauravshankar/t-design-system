@@ -22,7 +22,8 @@ module.exports = {
           secondary:  withOpacity('--color-secondary'),
           dark: `var(--color-text-base)`,
           danger: withOpacity('--color-danger'),
-          white: `var(--color-white)`
+          white: `var(--color-white)`,
+          gray:withOpacity('--color-gray-400')
       },
       },
     boxShadow: ['active'],

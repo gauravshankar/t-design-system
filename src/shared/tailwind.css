@@ -9,9 +9,18 @@
     --color-secondary: 55, 65, 81; /* 55, 65, 81 #374151 coolGray - 700 */
     --color-danger: 240, 68, 68; /* 240, 68, 68 #f04444 red - 500 */
     --color-white: 255, 255, 255;
+    --color-gray-400:156,163,175 /* 156,163,175 gray-400 */
   }
 }
 
-.custom-label input:checked + .icon-src {
+.checkbox input:checked + .icon-src {
   display: block !important;
+}
+
+.radio input:checked + .icon-src {
+  display: block !important;
+}
+
+.toggle input:checked ~ .dot {
+  transform: translateX(100%);
 }

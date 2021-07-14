@@ -1,20 +1,21 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
 
-import { Checkbox } from "./checkBox";
+import { RadioButton } from "./radioButton";
 
 export default {
-  title: "Design System/Atoms/Checkbox",
-  component: Checkbox,
+  title: "Design System/Atoms/radio",
+  component: RadioButton,
   argTypes: {
     appearance: {
       control: { type: "select", options: ["primary", "secondary", "danger"] },
     },
-    customCheck: false,
+    customRadio: false,
     icon: "",
     label: "",
-    customCheckClass: "",
+    customRadioClass: "",
     isLoading: false,
+    name: "",
   },
 };
 
@@ -44,15 +45,24 @@ const iconSource = (
   </svg>
 );
 
-export const CheckBox = (args) => <Checkbox {...args} />;
+export const radio = (args, args2, args3) => {
+  return (
+    <>
+      <RadioButton {...args} />
+      <RadioButton {...args} />
+      <RadioButton {...args} />
+    </>
+  );
+};
 
-CheckBox.args = {
+radio.args = {
   appearance: "primary",
   isLoading: false,
-  id: "check",
-  label: "This is a sample checkbox.",
-  customCheck: false,
+  id: "radio",
+  label: "This is a sample Radio Button.",
+  customRadio: false,
   icon: iconSource,
-  customCheckClass:
-    "bg-white border border-theme-primary rounded-full shadow w-6 h-6 p-2 flex justify-center items-center mr-2",
+  name: "radio",
+  customRadioClass:
+    "bg-white border border-theme-primary rounded-full shadow w-5 h-5 p-2 flex justify-center items-center mr-2",
 };
