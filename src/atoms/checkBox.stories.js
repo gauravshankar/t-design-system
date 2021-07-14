@@ -9,8 +9,8 @@ export default {
   argTypes: {
     appearance: {
       control: { type: "select", options: ["primary", "secondary", "danger"] },
-      icon: false,
-      iconSource: "",
+      customCheck: false,
+      icon: "",
       label: "",
       customCheckClass: "",
       isLoading: false,
@@ -44,29 +44,15 @@ const iconSource = (
   </svg>
 );
 
-export const defaultCheckBox = (args) => <Checkbox {...args} />;
+export const CheckBox = (args) => <Checkbox {...args} />;
 
-defaultCheckBox.args = {
+CheckBox.args = {
   appearance: "primary",
   isLoading: false,
   id: "check",
   label: "This is a sample checkbox.",
-  icon: false,
-  iconSource: iconSource,
+  customCheck: false,
+  icon: iconSource,
   customCheckClass:
     "bg-white border border-theme-primary rounded-full shadow w-6 h-6 p-2 flex justify-center items-center mr-2",
 };
-
-export const checkBox = () => (
-  <Checkbox
-    appearance="primary"
-    isLoading={false}
-    id="check"
-    label="This is a sample checkbox."
-    customIcon={true}
-    iconSource={iconSource}
-    customCheckClass={
-      "bg-white border border-theme-primary rounded-full shadow w-6 h-6 p-2 flex justify-center items-center mr-2"
-    }
-  />
-);

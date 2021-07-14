@@ -9,7 +9,7 @@ export function Checkbox({
   label,
   error,
   hideLabel,
-  iconSource,
+  customCheck,
   customCheckClass,
   ...props
 }) {
@@ -17,11 +17,11 @@ export function Checkbox({
   return !isLoading ? (
     <>
       <label className="custom-label flex p-2 items-center">
-        {icon ? (
+        {customCheck ? (
           <div className={customCheckClass}>
             <input type="checkbox" id={id} className="hidden" />
             <div className="icon-src hidden">
-              {iconSource}
+              {icon}
             </div>
           </div>
         ) : (
