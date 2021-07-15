@@ -21,7 +21,7 @@
     "build-css": "postcss ./src/shared/tailwind.css -o ./src/app.css",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "postcss ./src/shared/tailwind.css -o ./src/app.css & build-storybook -s public",
-    "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN",
+    "chromatic": "postcss ./src/shared/tailwind.css -o ./src/app.css & chromatic --project-token=CHROMATIC_PROJECT_TOKEN",
     "build-storybook-docs": "build-storybook -s public --docs",
     "release": "auto shipit --base-branch=main"
     
