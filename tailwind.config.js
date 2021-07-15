@@ -17,12 +17,12 @@ module.exports = {
     extend: {
       colors: {
         theme: {
-          // primary: `var(--color-primary)`,
+          bodyColor: withOpacity('--color-text-base'),
           primary: withOpacity('--color-primary'),
           secondary:  withOpacity('--color-secondary'),
-          dark: `var(--color-text-base)`,
+          dark: withOpacity('--color-text-base'),
           danger: withOpacity('--color-danger'),
-          white: `var(--color-white)`,
+          white: withOpacity('--color-white'),
           gray:withOpacity('--color-gray-400')
       },
       },
