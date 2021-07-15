@@ -3,7 +3,7 @@ import React from 'react';
 import { Avatar } from './Avatar';
 
 export default {
-  title: 'Design System/Atoms/Avatar',
+  title: 'Reference Design System/Atoms/Avatar',
   component: Avatar,
   parameters: {
     componentSubtitle:
@@ -14,7 +14,7 @@ export default {
 export const Standard = (args) => <Avatar {...args} />;
 Standard.args = {
   size: 'large',
-  username: 'Tom Coleman',
+  username: 'Shweta',
   src: 'https://avatars2.githubusercontent.com/u/132554',
 };
 

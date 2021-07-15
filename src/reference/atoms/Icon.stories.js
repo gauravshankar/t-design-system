@@ -49,7 +49,7 @@ const List = styled.ul`
 `;
 
 export default {
-  title: 'Design System/Atoms/Icon',
+  title: 'Reference Design System/Atoms/Icon',
   component: Icon,
 };
 

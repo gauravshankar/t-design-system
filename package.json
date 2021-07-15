@@ -3,6 +3,7 @@
   "version": "0.1.1",
   "private": false,
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -15,11 +16,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env BABEL_ENV=production babel src -d dist",
+    "build": "cross-env BABEL_ENV=production babel src -d dist & postcss ./src/shared/tailwind.css -o ./dist/style.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "storybook": "postcss ./src/shared/tailwind.css -o ./src/style.css & start-storybook -p 6006 -s public",
+    "build-storybook": "postcss ./src/shared/tailwind.css -o ./src/style.css &  build-storybook -s public",
     "chromatic": "chromatic --project-token=CHROMATIC_PROJECT_TOKEN",
     "build-storybook-docs": "build-storybook -s public --docs",
     "release": "auto shipit --base-branch=main"
@@ -50,6 +51,12 @@
       ]
     ]
   },
+  "babelMacros": {
+    "twin": {
+      "config": "./tailwind.config.js",
+      "preset": "styled-components"
+    }
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -68,19 +75,24 @@
     "@storybook/addon-actions": "^6.3.2",
     "@storybook/addon-essentials": "^6.3.2",
     "@storybook/addon-links": "^6.3.2",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/node-logger": "^6.3.2",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.3.2",
     "@tailwindcss/postcss7-compat": "^2.2.4",
     "auto": "^10.29.3",
     "autoprefixer": "^9",
+    "babel-plugin-macros": "^3.1.0",
     "chromatic": "^5.9.2",
     "cross-env": "^7.0.3",
-    "postcss": "^7",
+    "postcss": "^8",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.3.2",
     "rollup-plugin-postcss": "^4.0.0",
     "tailwind-styled-components": "^2.0.3",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "tailwindcss-pseudo-elements": "^2.0.0",
+    "twin.macro": "^2.6.2"
   },
   "main": "index.js",
   "author": "Gaurav Shankar",

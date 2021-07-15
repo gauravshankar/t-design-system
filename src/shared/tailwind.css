@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind forms;
+
+@layer base {
+  :root {
+    --color-text-base: 17, 24, 39 ; /* 17, 24, 39 #111827 coolGray - 900 */
+    --color-primary: 67, 56, 202; /* 67, 56, 202 #4338ca indigoBlue - 700 */
+    --color-secondary: 55, 65, 81; /* 55, 65, 81 #374151 coolGray - 700 */
+    --color-danger: 240, 68, 68; /* 240, 68, 68 #f04444 red - 500 */
+    --color-white: 255, 255, 255;
+    --color-gray-400:156,163,175 /* 156,163,175 gray-400 */
+  }
+}
+
+.checkbox input:checked + .icon-src {
+  display: block !important;
+}
+
+.radio input:checked + .icon-src {
+  display: block !important;
+}
+
+.toggle input:checked ~ .dot {
+  transform: translateX(100%);
+}
