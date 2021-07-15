@@ -15,7 +15,7 @@ export function RadioButton({
   value,
   ...props
 }) {
-  const defaultRadio = `appearance-none h-4 w-4 rounded-full border border-theme-${appearance} checked:bg-theme-${appearance}`;
+  const defaultRadio = `rounded-full border-theme-${appearance} mr-2 focus:border-transparent focus:bg-theme-${appearance} text-theme-${appearance} focus:ring-1 focus:ring-offset-2 focus:ring-theme-${appearance}`;
   return !isLoading ? (
     <>
       <label className="radio flex p-2 items-center">
@@ -27,10 +27,9 @@ export function RadioButton({
             </div>
           </div>
         ) : (
-          <div className="flex justify-center items-center mr-2">
-            <input type="radio" name={name} value={value} id={id} className={defaultRadio} />
-            <div className="space-y-2"></div>
-          </div>
+          <label class="inline-flex items-center">
+              <input type="radio" class={defaultRadio} />
+          </label>
         )}
         {!hideLabel && label && <span className="select-none">{label}</span>}
       </label>

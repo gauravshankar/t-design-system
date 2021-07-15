@@ -11,7 +11,7 @@ export function ToggleButton({
   hideLabel,
   ...props
 }) {
-  const slider = `appearance-none w-10 h-4 rounded-full shadow-inner bg-theme-${barColor}`;
+  const slider = `border-theme-${appearance} w-10 h-4 rounded-full shadow-inner bg-theme-${barColor}`;
   const dot =`dot absolute w-6 h-6 rounded-full shadow -left-1 -top-1 transition bg-theme-${appearance}`
   return !isLoading ? (
     <>

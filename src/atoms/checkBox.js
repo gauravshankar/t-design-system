@@ -13,21 +13,20 @@ export function Checkbox({
   customCheckClass,
   ...props
 }) {
-  const defaultCheck = `appearance-none h-4 w-4 rounded border border-theme-${appearance} checked:bg-theme-${appearance}`;
+  const defaultCheck = `rounded border-theme-${appearance} focus:border-transparent focus:bg-theme-${appearance} text-theme-${appearance} focus:ring-1 focus:ring-offset-2 focus:ring-theme-${appearance}`;
   return !isLoading ? (
     <>
       <label className="checkbox flex p-2 items-center">
         {customCheck ? (
           <div className={customCheckClass}>
             <input type="checkbox" id={id} className="hidden" />
-            <div className="icon-src hidden">
-              {icon}
-            </div>
+            <div className="icon-src hidden">{icon}</div>
           </div>
         ) : (
           <div className="flex justify-center items-center mr-2">
-            <input type="checkbox" id={id} className={defaultCheck} />
-            <div className="space-y-2"></div>
+            <label class="inline-flex items-center">
+              <input type="checkbox" class={defaultCheck} />
+            </label>
           </div>
         )}
         {!hideLabel && label && <span className="select-none">{label}</span>}
