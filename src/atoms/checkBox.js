@@ -13,7 +13,7 @@ export function Checkbox({
   customCheckClass,
   ...props
 }) {
-  const defaultCheck = `rounded border-theme-${appearance} focus:border-transparent focus:bg-theme-${appearance} text-theme-${appearance} focus:ring-1 focus:ring-offset-2 focus:ring-theme-${appearance}`;
+  const defaultCheck = `rounded border-theme-${appearance} bg-none focus:border-transparent focus:border-theme-${appearance} focus:ring-1 focus:ring-offset-2 focus:ring-theme-${appearance}`;
   return !isLoading ? (
     <>
       <label className="checkbox flex p-2 items-center">
