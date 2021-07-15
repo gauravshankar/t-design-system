@@ -1,12 +1,12 @@
-import * as styles from './shared/styles';
-import * as global from './shared/global';
-import * as animation from './shared/animation';
-import * as icons from './shared/icons';
-import '../shared/tailwind.css';
+import * as styles from './reference/shared/styles';
+import * as global from './reference/shared/global';
+import * as animation from './reference/shared/animation';
+import * as icons from './reference/shared/icons';
+import './app.css';
 export { styles, global, animation, icons };
 
-export * from './atoms/Avatar';
-export * from './atoms/Badge';
-export * from './atoms/Button';
-export * from './atoms/Icon';
-export * from './atoms/Link';
+export * from './reference/atoms/Avatar';
+export * from './reference/atoms/Badge';
+export * from './reference/atoms/Button';
+export * from './reference/atoms/Icon';
+export * from './reference/atoms/Link';
