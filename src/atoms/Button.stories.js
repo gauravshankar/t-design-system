@@ -21,7 +21,6 @@ export default {
     },
     },
   component: Button,
-  
 };
 
 export const Standard = (args) => <Button {...args} />;
