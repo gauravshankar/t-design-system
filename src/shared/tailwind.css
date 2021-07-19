@@ -31,7 +31,7 @@
   [multiple],
   textarea,
   select {
-    @apply w-full border-gray-300 rounded-lg shadow-sm;
+    @apply rounded w-full border-gray-300 shadow-sm;
   }
 }
 

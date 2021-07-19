@@ -38,7 +38,7 @@ export const Button = (props) => {
   buttonDisabled = (isDisabled ? 'cursor-not-allowed hover:bg-opacity-60 bg-opacity-60 border-opacity-10 text-opacity-60	 ' : '');
 
   let buttonClassName = '';
-  buttonClassName = ( `${buttonVarient} ${buttonDisabled} ` + (size === 'small' ? 'px-5 py-3 ' : 'px-8 py-4 ') + ` ${className}` );
+  buttonClassName = ( `${buttonVarient} ${buttonDisabled} ` + (size === 'small' ? 'px-3 py-2 ' : 'px-2 py-4 ') + ` ${className}` );
 
   const buttonInner = (
     <Fragment>
@@ -97,6 +97,6 @@ Button.defaultProps = {
   loadingText: null,
   isLink: false,
   isDisabled: false,
-  size: SIZES.MEDIUM,
+  size: SIZES.SMALL,
   title: 'click me'
 };

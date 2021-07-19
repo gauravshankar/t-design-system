@@ -37,7 +37,7 @@ export const Control = (props) => {
     : "";
 
   let controlClassName = "";
-  controlClassName = `w-full border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary ${controlDisabled} ${controlSize} ${className}`;
+  controlClassName = `rounded w-full border-gray-300 shadow-sm focus:border-primary focus:ring-primary ${controlDisabled} ${controlSize} ${className}`;
 
   return (
     <>
