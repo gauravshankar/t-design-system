@@ -13,18 +13,13 @@ const SIZES = {
   MEDIUM: 'medium',
 };
 
-const CORNER_RADIUS = {
-  rounded: 'rounded',
-  pill: 'rounded-full'
-}
-
 const COLOR = {
   primary: 'primary',
   secondary: 'secondary'
 }
 
 export const Button = (props) => {
-	const { isLink, label="Button", size, type = 'button', onClick, className, color, varient, isDisabled = false, cornerRadius, isLoading, loadingText, title} = props
+	const { isLink, label="Button", size, type = 'button', onClick, className, color, varient, isDisabled = false, isLoading, loadingText, title} = props
 
   let buttonVarient;
   if (varient === "solid") {
@@ -43,7 +38,7 @@ export const Button = (props) => {
   buttonDisabled = (isDisabled ? 'cursor-not-allowed hover:bg-opacity-60 bg-opacity-60 border-opacity-10 text-opacity-60	 ' : '');
 
   let buttonClassName = '';
-  buttonClassName = ( `${buttonVarient} ${buttonDisabled} ` + (size === 'small' ? 'px-5 py-3 ' : 'px-8 py-4 ') + `${cornerRadius} ${className}` );
+  buttonClassName = ( `${buttonVarient} ${buttonDisabled} ` + (size === 'small' ? 'px-5 py-3 ' : 'px-8 py-4 ') + ` ${className}` );
 
   const buttonInner = (
     <Fragment>
@@ -77,10 +72,10 @@ export const Button = (props) => {
 Button.propTypes = {
   title: PropTypes.any,
   varient:PropTypes.oneOf(Object.values(VARIENTS)),
-  cornerRadius: PropTypes.oneOf(Object.values(COLOR)),
+  color: PropTypes.oneOf(Object.values(COLOR)),
   isLoading: PropTypes.bool,
   /** When a button is in the loading state you can supply custom text */
- loadingText: PropTypes.node,
+  loadingText: PropTypes.node,
   /** Buttons that have hrefs should use <a> instead of <button>*/
   isLink: PropTypes.bool,
 
@@ -89,11 +84,10 @@ Button.propTypes = {
   /** Buttons that have outline and fills on hover */
   outline: PropTypes.bool,
   isDisabled: PropTypes.bool,
-
+  title:PropTypes.string,
   /** Buttons having different sizes */
   size: PropTypes.oneOf(Object.values(SIZES)),
   // ButtonWrapper: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
-  cornerRadius: PropTypes.oneOf(Object.values(CORNER_RADIUS)),
 };
 
 Button.defaultProps = {
@@ -104,5 +98,5 @@ Button.defaultProps = {
   isLink: false,
   isDisabled: false,
   size: SIZES.MEDIUM,
-  cornerRadius: CORNER_RADIUS.rounded,
+  title: 'click me'
 };

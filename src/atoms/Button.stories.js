@@ -17,6 +17,7 @@ export default {
       className: 'mr-5',
       isDisabled: false,
       label: 'Shweta',
+      title: 'Click me'
     },
     },
   component: Button,
@@ -34,6 +35,7 @@ Standard.args = {
   loadingText: '',
   isLoading: false,
   isLink: false,
+  title: 'Click me'
 };
 
 export const AllButtons = (args) => (
