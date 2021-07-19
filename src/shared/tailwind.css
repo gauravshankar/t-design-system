@@ -9,8 +9,11 @@
     --color-primary: 67, 56, 202; /* 67, 56, 202 #4338ca indigoBlue - 700 */
     --color-secondary: 55, 65, 81; /* 55, 65, 81 #374151 coolGray - 700 */
     --color-danger: 240, 68, 68; /* 240, 68, 68 #f04444 red - 500 */
+    --color-success: 5, 150, 105; /* 5, 150, 105 #059669 green-600  */
+    --color-warning: 245, 158, 11; /* 245, 158, 11 #F59E0B Yellow - 500 */
+    --color-info: 29, 78, 216; /* 191, 219, 254 #1D4ED8 blue - 700 */
     --color-white: 255, 255, 255;
-    --color-gray-400:156,163,175 /* 156,163,175 gray-400 */
+    --color-gray-400:156,163,175 /* 156,163,175 #9CA3AF gray-400 */
   }
 }
 

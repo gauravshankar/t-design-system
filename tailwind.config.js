@@ -23,7 +23,10 @@ module.exports = {
           dark: `var(--color-text-base)`,
           danger: withOpacity('--color-danger'),
           white: `var(--color-white)`,
-          gray:withOpacity('--color-gray-400')
+          gray:withOpacity('--color-gray-400'),
+          success:withOpacity('--color-success'),
+          warning:withOpacity('--color-warning'),
+          info:withOpacity('--color-info'),
       },
       },
     boxShadow: ['active'],

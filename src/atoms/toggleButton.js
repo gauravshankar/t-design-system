@@ -18,8 +18,8 @@ export function ToggleButton({
       <label className="toggle flex p-2 items-center">
         <div className="relative w-14">
           <input type="checkbox" id={id} className="hidden" />
-          <div class={slider}></div>
-          <div class={dot}></div>
+          <div className={slider}></div>
+          <div className={dot}></div>
         </div>
         {!hideLabel && label && <span className="select-none">{label}</span>}
       </label>
@@ -29,3 +29,13 @@ export function ToggleButton({
     <label className="custom-label flex p-2"> Loading...</label>
   );
 }
+
+
+ToggleButton.propTypes = {
+  appearance:PropTypes.string,
+  barColor:PropTypes.string,
+  isLoading: PropTypes.bool,
+  id:PropTypes.string,
+  label:PropTypes.string,
+  hideLabel:PropTypes.bool
+};
