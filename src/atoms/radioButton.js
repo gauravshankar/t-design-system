@@ -1,6 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+const SIZES = {
+  SMALL: "small",
+  MEDIUM: "medium",
+  LARGE: "large",
+};
+
 export function RadioButton({
   appearance,
   icon,
@@ -13,9 +19,20 @@ export function RadioButton({
   customRadioClass,
   name,
   value,
+  size,
   ...props
 }) {
-  const defaultRadio = `rounded-full border-theme-${appearance} mr-2 focus:border-transparent focus:bg-theme-${appearance} text-theme-${appearance} focus:ring-1 focus:ring-offset-2 focus:ring-theme-${appearance}`;
+
+  let controlSize;
+  if (size === "medium") {
+    controlSize = "p-2";
+  } else if (size === "large") {
+    controlSize = "p-4";
+  } else {
+    controlSize = "";
+  }
+
+  const defaultRadio = `rounded-full border-theme-${appearance} ${controlSize} mr-2 focus:border-transparent focus:bg-theme-${appearance} text-theme-${appearance} focus:ring-1 focus:ring-offset-2 focus:ring-theme-${appearance}`;
   return !isLoading ? (
     <>
       <label className="radio flex p-2 items-center">
@@ -27,8 +44,8 @@ export function RadioButton({
             </div>
           </div>
         ) : (
-          <label class="inline-flex items-center">
-              <input type="radio" class={defaultRadio} />
+          <label className="inline-flex items-center">
+              <input type="radio" className={defaultRadio} />
           </label>
         )}
         {!hideLabel && label && <span className="select-none">{label}</span>}
@@ -39,3 +56,17 @@ export function RadioButton({
     <label className="flex p-2"> Loading...</label>
   );
 }
+
+
+RadioButton.propTypes = {
+  appearance:PropTypes.string,
+  icon:PropTypes.string,
+  isLoading:PropTypes.bool,
+  id: PropTypes.string,
+  label:PropTypes.string,
+  error:PropTypes.string,
+  hideLabel:PropTypes.bool,
+  customRadio:PropTypes.bool,
+  customRadioClass:PropTypes.string,
+  size:PropTypes.oneOf(Object.values(SIZES)),
+};
