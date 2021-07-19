@@ -1,20 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-// interface Props {
-// 	className?: string
-// 	color?: string
-// 	disabled?: boolean
-// 	icon?: any
-// 	iconClassName?: string
-// 	label: string
-// 	outline?: boolean
-// 	size?: 'sm' | 'md' | 'lg'
-// 	type?: 'button' | 'reset' | 'submit'
-// 	onClick?: (e: any) => any
-// 	title?: string
-// }
-
 const APPEARANCES = {
   PRIMARY: 'primary',
   SECONDARY: 'secondary',
