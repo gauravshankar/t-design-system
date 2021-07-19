@@ -31,7 +31,7 @@ export const Control = (props) => {
   }
 
   let controlDisabled = "";
-  controlDisabled = isDisabled ? "cursor-not-allowed bg-gray-200 bg-opacity-65 " : "";
+  controlDisabled = isDisabled ? "cursor-not-allowed bg-gray-200 bg-opacity-60 " : "";
 
   let controlClassName = "";
   controlClassName = `w-full border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary ${controlDisabled} ${controlSize} ${className}`;
