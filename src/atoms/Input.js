@@ -19,6 +19,7 @@ export const Control = (props) => {
     onChange,
     onBlur,
     value,
+    isTextarea,
   } = props;
 
   let controlSize;
@@ -31,53 +32,65 @@ export const Control = (props) => {
   }
 
   let controlDisabled = "";
-  controlDisabled = isDisabled ? "cursor-not-allowed bg-gray-200 bg-opacity-60 " : "";
+  controlDisabled = isDisabled
+    ? "cursor-not-allowed bg-gray-200 bg-opacity-60 "
+    : "";
 
   let controlClassName = "";
   controlClassName = `w-full border-gray-300 rounded-lg shadow-sm focus:border-primary focus:ring-primary ${controlDisabled} ${controlSize} ${className}`;
 
   return (
     <>
-      <div className='control-group pb-2'>
-        <label className='text-primary mb-1 inline-block' htmlFor={id}>
-            {label}
+      <div className="control-group pb-2">
+        <label className="text-primary mb-1 inline-block" htmlFor={id}>
+          {label}
         </label>
-        <input
+        {!isTextarea ? (
+          <input
             id={id}
             type={type}
             className={`control-input focus:border-theme-primary focus:ring-theme-primary ${controlClassName}`}
-            aria-describedby={type + 'help'}
+            aria-describedby={type + "help"}
             placeholder={placeholder}
             // onChange={onChange}
             // onBlur={onBlur}
             value={value}
             disabled={isDisabled}
-        />
-    </div>
+          />
+        ) : (
+          <textarea
+            id={id}
+            aria-describedby={type + "help"}
+            placeholder={placeholder}
+            className={`control-input focus:border-theme-primary focus:ring-theme-primary ${controlClassName}`}
+          />
+        )}
+      </div>
     </>
   );
 };
 
 Control.propTypes = {
-    id: PropTypes.string,
-    type: PropTypes.string,
-    className: PropTypes.string,
-    placeholder: PropTypes.string,
-    // onChange: PropTypes.any,
-    // onBlur: PropTypes.any,
-    value: PropTypes.string,
+  id: PropTypes.string,
+  type: PropTypes.string,
+  className: PropTypes.string,
+  placeholder: PropTypes.string,
+  // onChange: PropTypes.any,
+  // onBlur: PropTypes.any,
+  value: PropTypes.string,
   isDisabled: PropTypes.bool,
   size: PropTypes.oneOf(Object.values(SIZES)),
+  isTextarea: PropTypes.bool
 };
 
 Control.defaultProps = {
   isDisabled: false,
   size: SIZES.MEDIUM,
-  id: 'default_ControlField',
-  type: 'text',
-  className: '',
-  placeholder: 'I am Placeholder',
-//   onChange: false,
-//   onBlur: false,
-  value: 'I am default value',
+  id: "default_ControlField",
+  type: "text",
+  className: "",
+  placeholder: "I am Placeholder",
+  isTextarea: false,
+  //   onChange: false,
+  //   onBlur: false,
 };

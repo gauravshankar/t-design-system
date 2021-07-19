@@ -33,3 +33,9 @@ export const Input = () => (
     <Control placeholder="test" label="Input field" className="Yess" size="large" />
   </>
 );
+
+export const Textarea = () => (
+  <>
+    <Control isTextarea placeholder="test" label="Input field" className="Yess" size="large" />
+  </>
+);
