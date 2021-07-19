@@ -1,5 +1,6 @@
 import * as React from "react";
 import {Control} from "./Input";
+import {Select} from "./Select";
 
 export default {
     title: 'Design System/Atoms/Control',
@@ -39,3 +40,14 @@ export const Textarea = () => (
     <Control isTextarea placeholder="test" label="Input field" className="Yess" size="large" />
   </>
 );
+
+var select_options = ['One', 'Two', 'Three', 'Four'];
+
+export const SelectBox = (args) => <Select options={select_options} {...args} />;
+SelectBox.args = {
+    label: 'Custom Select Box',
+    isDisabled: false,
+    size: "medium",
+    id: 'my_id',
+    className: 'my-custom-class',
+};

@@ -42,9 +42,11 @@ export const Control = (props) => {
   return (
     <>
       <div className="control-group pb-2">
-        <label className="text-primary mb-1 inline-block" htmlFor={id}>
-          {label}
-        </label>
+        {label && (
+          <label className="text-primary mb-1 inline-block" htmlFor={id}>
+            {label}
+          </label>
+        )}
         {!isTextarea ? (
           <input
             id={id}
@@ -80,7 +82,7 @@ Control.propTypes = {
   value: PropTypes.string,
   isDisabled: PropTypes.bool,
   size: PropTypes.oneOf(Object.values(SIZES)),
-  isTextarea: PropTypes.bool
+  isTextarea: PropTypes.bool,
 };
 
 Control.defaultProps = {
