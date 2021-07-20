@@ -1,23 +1,11 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-// interface Props {
-// 	className?: string
-// 	color?: string
-// 	disabled?: boolean
-// 	icon?: any
-// 	iconClassName?: string
-// 	label: string
-// 	outline?: boolean
-// 	size?: 'sm' | 'md' | 'lg'
-// 	type?: 'button' | 'reset' | 'submit'
-// 	onClick?: (e: any) => any
-// 	title?: string
-// }
-
-const APPEARANCES = {
-  PRIMARY: 'primary',
-  SECONDARY: 'secondary',
+const VARIENTS = {
+  SOLID: 'solid',
+  OUTLINE: 'outline',
+  SOLID_PILL: 'solid-pill',
+  OUTLINED_PILL: 'outline-pill',
 };
 
 const SIZES = {
@@ -25,22 +13,32 @@ const SIZES = {
   MEDIUM: 'medium',
 };
 
-const CORNER_RADIUS = {
-  rounded: 'rounded',
-  pill: 'rounded-full'
+const COLOR = {
+  primary: 'primary',
+  secondary: 'secondary'
 }
 
 export const Button = (props) => {
-	const {className = '', color = 'primary', isDisabled = false, cornerRadius, isLoading, loadingText, iconClassName = ''} = props
-	const {label="Button", outline = false, size = '', type = 'button', onClick, title} = props;
-  //Set Outline Button as per theme
-  let isOutlineButton ='';
-  isOutlineButton = (outline ? `border-theme-${color} text-theme-${color} hover:bg-theme-${color} hover:text-white` : `bg-theme-${color} text-white hover:bg-opacity-90 border-theme-${color}`)
+	const { isLink, label="Button", size, type = 'button', onClick, className, color, varient, isDisabled = false, isLoading, loadingText, title} = props
+
+  let buttonVarient;
+  if (varient === "solid") {
+    buttonVarient = `bg-theme-${color} text-white hover:bg-opacity-90 border-theme-${color} rounded`;
+  } else if (varient === "outline") {
+    buttonVarient = `border-theme-${color} text-theme-${color} hover:bg-theme-${color} hover:text-white rounded`;
+  } else if (varient === "solid-pill") {
+    buttonVarient = `bg-theme-${color} text-white hover:bg-opacity-90 border-theme-${color} rounded-full`;
+  } else if (varient === "outline-pill") {
+    buttonVarient = `border-theme-${color} text-theme-${color} hover:bg-theme-${color} hover:text-white rounded-full`;
+  } else {
+    buttonVarient = `bg-theme-${color} text-white hover:bg-opacity-90 border-theme-${color} rounded`;
+  }
+
   let buttonDisabled = '';
-  buttonDisabled = (isDisabled ? 'cursor-not-allowed bg-opacity-65 ' : '');
+  buttonDisabled = (isDisabled ? 'cursor-not-allowed hover:bg-opacity-60 bg-opacity-60 border-opacity-10 text-opacity-60	 ' : '');
 
   let buttonClassName = '';
-  buttonClassName = ( `${isOutlineButton} ${buttonDisabled} ` + (size === 'small' ? 'px-5 py-3 ' : 'px-8 py-4 ') + `${cornerRadius} ${className}` );
+  buttonClassName = ( `${buttonVarient} ${buttonDisabled} ` + (size === 'small' ? 'px-3 py-2 ' : 'px-2 py-4 ') + ` ${className}` );
 
   const buttonInner = (
     <Fragment>
@@ -49,6 +47,13 @@ export const Button = (props) => {
     </Fragment>
   );
 
+  if(isLink){
+    return(
+      <a title={title} className={`${buttonClassName} border`}>
+        {buttonInner}
+      </a>
+    )
+  }
 	return (
 		<button
 			type={type}
@@ -65,46 +70,33 @@ export const Button = (props) => {
 
 
 Button.propTypes = {
+  title: PropTypes.any,
+  varient:PropTypes.oneOf(Object.values(VARIENTS)),
+  color: PropTypes.oneOf(Object.values(COLOR)),
   isLoading: PropTypes.bool,
-  
-   /** When a button is in the loading state you can supply custom text
-  */
- loadingText: PropTypes.node,
-  
-   /** Buttons that have hrefs should use <a> instead of <button>
-  */
-  // isLink: PropTypes.bool,
-  /**
-    What label button has
-  */
+  /** When a button is in the loading state you can supply custom text */
+  loadingText: PropTypes.node,
+  /** Buttons that have hrefs should use <a> instead of <button>*/
+  isLink: PropTypes.bool,
+
+  /** What label button has */
   label: PropTypes.node.isRequired,
-  /**
-    Buttons that have outline and fills on hover
-  */
+  /** Buttons that have outline and fills on hover */
   outline: PropTypes.bool,
   isDisabled: PropTypes.bool,
-  /**
-   Prevents users from clicking on a button multiple times (for things like payment forms)
-  */
-  // isUnclickable: PropTypes.bool,
-  /**
-   Buttons with icons by themselves have a circular shape
-  */
-  // containsIcon: PropTypes.bool,
+  title:PropTypes.string,
+  /** Buttons having different sizes */
   size: PropTypes.oneOf(Object.values(SIZES)),
   // ButtonWrapper: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
-  cornerRadius: PropTypes.oneOf(Object.values(CORNER_RADIUS)),
 };
 
 Button.defaultProps = {
+  color: COLOR.primary,
+  varient:VARIENTS.solid,
   isLoading: false,
   loadingText: null,
   isLink: false,
   isDisabled: false,
-  isUnclickable: false,
-  containsIcon: false,
-  size: SIZES.MEDIUM,
-  ButtonWrapper: undefined,
-  outline: false,
-  cornerRadius: CORNER_RADIUS.rounded,
+  size: SIZES.SMALL,
+  title: 'click me'
 };

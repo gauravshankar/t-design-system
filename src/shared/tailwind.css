@@ -5,7 +5,7 @@
 
 @layer base {
   :root {
-    --color-text-base: 17, 24, 39 ; /* 17, 24, 39 #111827 coolGray - 900 */
+    --color-text-base: 17, 24, 39; /* 17, 24, 39 #111827 coolGray - 900 */
     --color-primary: 67, 56, 202; /* 67, 56, 202 #4338ca indigoBlue - 700 */
     --color-secondary: 55, 65, 81; /* 55, 65, 81 #374151 coolGray - 700 */
     --color-danger: 240, 68, 68; /* 240, 68, 68 #f04444 red - 500 */
@@ -13,7 +13,25 @@
     --color-warning: 245, 158, 11; /* 245, 158, 11 #F59E0B Yellow - 500 */
     --color-info: 29, 78, 216; /* 191, 219, 254 #1D4ED8 blue - 700 */
     --color-white: 255, 255, 255;
-    --color-gray-400:156,163,175 /* 156,163,175 #9CA3AF gray-400 */
+    --color-gray-400: 156, 163, 175; /* 156,163,175 gray-400 */
+  }
+
+  [type="text"],
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select {
+    @apply rounded w-full border-gray-300 shadow-sm;
   }
 }
 

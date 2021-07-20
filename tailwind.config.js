@@ -17,16 +17,16 @@ module.exports = {
     extend: {
       colors: {
         theme: {
-          // primary: `var(--color-primary)`,
+          bodyColor: withOpacity('--color-text-base'),
           primary: withOpacity('--color-primary'),
           secondary:  withOpacity('--color-secondary'),
-          dark: `var(--color-text-base)`,
           danger: withOpacity('--color-danger'),
-          white: `var(--color-white)`,
-          gray:withOpacity('--color-gray-400'),
           success:withOpacity('--color-success'),
           warning:withOpacity('--color-warning'),
           info:withOpacity('--color-info'),
+          white: withOpacity('--color-white'),
+          gray:withOpacity('--color-gray-400'),
+          dark: withOpacity('--color-text-base'),
       },
       },
     boxShadow: ['active'],
