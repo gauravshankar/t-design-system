@@ -8,7 +8,7 @@ export default {
   argTypes: {
     ClassName: "",
     title: "",
-    menu: {},
+    menu: "",
     image: "",
     showImage: false,
     menuBg: {

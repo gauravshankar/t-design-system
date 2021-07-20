@@ -2,12 +2,13 @@ import React from "react";
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/solid";
+import PropTypes from "prop-types";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 export const Dropdown = ({
-    className,
+  className,
   title,
   image,
   showImage,
@@ -18,7 +19,11 @@ export const Dropdown = ({
   ...props
 }) => {
   const position =
-    menuPosition === "right" ? "right-0" : menuPosition === "left" ? "left-0" :"";
+    menuPosition === "right"
+      ? "right-0"
+      : menuPosition === "left"
+      ? "left-0"
+      : "";
   return (
     <Menu as="div" className="ml-3 relative inline-block">
       {({ open }) => (
@@ -64,8 +69,8 @@ export const Dropdown = ({
               )}
             >
               {menu &&
-                menu.map((item) => (
-                  <Menu.Item>
+                menu.map((item, i) => (
+                  <Menu.Item key={item.name}>
                     <a
                       key={item.name}
                       href={item.href}
@@ -86,4 +91,15 @@ export const Dropdown = ({
       )}
     </Menu>
   );
+};
+
+Dropdown.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string,
+  image: PropTypes.string,
+  showImage: PropTypes.bool,
+  menu: PropTypes.string,
+  menuBg: PropTypes.string,
+  menuColor: PropTypes.string,
+  menuPosition: PropTypes.string,
 };

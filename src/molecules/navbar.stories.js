@@ -6,6 +6,22 @@ import { Dropdown } from "./dropdown";
 export default {
   title: "Design System/Molecules/navbar",
   component: NavBar,
+  argTypes: {
+    navigation: "",
+    logo: "",
+    theme: {
+      control: {
+        type: "select",
+        options: ["danger", "warning", "success", "info", "dark"],
+      },
+    },
+    textColor: {
+      control: {
+        type: "select",
+        options: ["danger", "warning", "success", "info", "dark", "white"],
+      },
+    },
+  },
 };
 
 function classNames(...classes) {
@@ -27,7 +43,7 @@ const dropdownMenu = [
 ];
 
 const dropdownImage = () => {
-  return <UserCircleIcon className="h-8 w-8 text-white" aria-hidden="true"/>;
+  return <UserCircleIcon className="h-8 w-8 text-white" aria-hidden="true" />;
 };
 
 const logo = () => {
@@ -46,13 +62,8 @@ const logo = () => {
     </>
   );
 };
-export const navbar = () => (
-  <NavBar
-    navigation={navigation}
-    logo={logo()}
-    theme="primary"
-    textColor="white"
-  >
+export const navbar = (args) => (
+  <NavBar {...args}>
     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
       <button
         className={classNames(
@@ -76,3 +87,10 @@ export const navbar = () => (
     </div>
   </NavBar>
 );
+
+navbar.args = {
+  navigation: navigation,
+  logo: logo(),
+  theme: "primary",
+  textColor: "white",
+};
