@@ -33,6 +33,7 @@ This template ships with the main React configuration files you'll need to get u
     # Install the dependencies
     yarn
     ```
+    
 
 1.  **Open the source code and start editing!**
 
