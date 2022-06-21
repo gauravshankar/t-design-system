@@ -34,6 +34,7 @@ This template ships with the main React configuration files you'll need to get u
     yarn
     ```
 
+
 1.  **Open the source code and start editing!**
 
     Open the `learnstorybook-design-system` directory in your code editor of choice and building your first component!
