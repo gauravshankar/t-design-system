@@ -20,7 +20,7 @@
     "chromatic": "chromatic",
     "build-storybook-docs": "storybook build --docs",
     "release": "auto shipit --base-branch=main",
-    "prepare": "husky"
+    "prepare": "test \"$CI\" = \"true\" && exit 0; husky"
   },
   "eslintConfig": {
     "extends": [
@@ -72,6 +72,7 @@
     "babel-plugin-macros": "^3.1.0",
     "chromatic": "^16.1.0",
     "cross-env": "^7.0.3",
+    "husky": "^9.1.7",
     "jsdom": "^29.0.1",
     "postcss": "^8",
     "postcss-cli": "^8.3.1",
