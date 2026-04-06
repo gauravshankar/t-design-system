@@ -1,27 +1,47 @@
-const path = require('path');
+export default {
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
 
-module.exports = {
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
-    '@storybook/addon-essentials',
-    '@storybook/preset-create-react-app',
-    '@storybook/addon-a11y',
+    '@storybook/addon-a11y'
   ],
-  webpackFinal: async (config) => {
-    config.module.rules.push({
-      test: /\,css&/,
-      use: [
-        {
-          loader: 'postcss-loader',
-          options: {
-            ident: 'postcss',
-            plugins: [require('tailwindcss'), require('autoprefixer')],
-          },
-        },
-      ],
-      include: path.resolve(__dirname, '../'),
-    });
-    return config;
+
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
   },
+
+  staticDirs: ['../public'],
+
+  async viteFinal(config) {
+    config.build = config.build || {};
+    config.build.rollupOptions = config.build.rollupOptions || {};
+    
+    // Explicitly overwrite external arrays inherited from vite.config.js's library build mode
+    // Storybook UI needs react and styled-components fully bundled for its iframe natively, and twin.macro should be stripped by babel macros, not externalized to the browser
+    config.build.rollupOptions.external = [];
+    
+    const originalWarn = config.build.rollupOptions.onwarn;
+    config.build.rollupOptions.onwarn = (warning, warn) => {
+      if (warning.message && warning.message.includes('has been externalized for browser compatibility')) {
+        return;
+      }
+      if (originalWarn) {
+        originalWarn(warning, warn);
+      } else {
+        warn(warning);
+      }
+    };
+    
+    config.optimizeDeps = config.optimizeDeps || {};
+    config.optimizeDeps.exclude = [...(config.optimizeDeps.exclude || []), 'twin.macro'];
+    
+    config.define = {
+      ...config.define,
+      'process.env': {},
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV ?? 'production'),
+    };
+    
+    return config;
+  }
 };

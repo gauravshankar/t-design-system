@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { GlobalStyle } from '../src/reference/shared/global';
-import '../src/style.css';
+import '../src/shared/tailwind.css';
 // Global decorator to apply the styles to all stories
 export const decorators = [
   (Story) => (
@@ -27,3 +27,4 @@ export const parameters = {
     },
   },
 };
+export const tags = ['autodocs'];
