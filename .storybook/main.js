@@ -32,6 +32,12 @@ export default {
     config.optimizeDeps = config.optimizeDeps || {};
     config.optimizeDeps.exclude = [...(config.optimizeDeps.exclude || []), 'twin.macro'];
     
+    config.define = {
+      ...config.define,
+      'process.env': {},
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV ?? 'production'),
+    };
+    
     return config;
   }
 };
