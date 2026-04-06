@@ -17,6 +17,10 @@ export default {
     config.build = config.build || {};
     config.build.rollupOptions = config.build.rollupOptions || {};
     
+    // Explicitly overwrite external arrays inherited from vite.config.js's library build mode
+    // Storybook UI needs react and styled-components fully bundled for its iframe natively, and twin.macro should be stripped by babel macros, not externalized to the browser
+    config.build.rollupOptions.external = [];
+    
     const originalWarn = config.build.rollupOptions.onwarn;
     config.build.rollupOptions.onwarn = (warning, warn) => {
       if (warning.message && warning.message.includes('has been externalized for browser compatibility')) {
