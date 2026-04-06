@@ -1,0 +1,164 @@
+yarn run v1.22.22
+$ storybook build
+[1m@storybook/core v8.6.18
+[22m
+info => Cleaning outputDir: [36mstorybook-static[39m
+info => Loading presets
+info => Building manager..
+info => Manager built ([38;2;181;126;229m122 ms[39m)
+info => Building preview..
+[36mvite v8.0.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...info => Copying static files: [36mpublic[39m at [36mstorybook-static[39m
+
+warn - Tailwind is not purging unused styles because no template paths have been provided.
+warn - If you have manually configured PurgeCSS outside of Tailwind or are deliberately not removing unused styles, set `purge: false` in your Tailwind config file to silence this warning.
+warn - https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/macro.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "fs" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/macro.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/babel-plugin-macros/dist/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "os" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "fs" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/sync.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/sync.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/ExplorerSync.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/Explorer.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "fs" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/async.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/async.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "fs" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/readFile.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/ExplorerBase.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/node-modules-paths.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/getDirectory.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/import-fresh/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/tailwindcss/node_modules/postcss/lib/input.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve-from/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "fs" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/path-type/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "module" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve-from/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "fs" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve-from/index.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/tailwindcss/node_modules/postcss/lib/previous-map.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/tailwindcss/node_modules/postcss/lib/map-generator.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-nested/node_modules/postcss/lib/input.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-js/node_modules/postcss/lib/input.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-nested/node_modules/postcss/lib/previous-map.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-nested/node_modules/postcss/lib/map-generator.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-js/node_modules/postcss/lib/previous-map.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+[33m[plugin rolldown:vite-resolve] Module "path" has been externalized for browser compatibility, imported by "/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-js/node_modules/postcss/lib/map-generator.js". See https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.[39m
+✓ 748 modules transformed.
+rendering chunks...
+computing gzip size...
+storybook-static/iframe.html                                          17.51 kB │ gzip:   5.05 kB
+storybook-static/assets/preview-BBVV3Zcf.css                       3,448.45 kB │ gzip: 331.92 kB
+storybook-static/assets/chunk-H6MOWX77-6SMeeeEI.js                     0.09 kB │ gzip:   0.11 kB
+storybook-static/assets/preview-CJwSDhWP.js                            0.15 kB │ gzip:   0.13 kB
+storybook-static/assets/preview-9UBzQVf_.js                            0.16 kB │ gzip:   0.15 kB
+storybook-static/assets/client-CB71KNne.js                             0.17 kB │ gzip:   0.14 kB
+storybook-static/assets/react-tJL7M3hO.js                              0.44 kB │ gzip:   0.28 kB
+storybook-static/assets/preview-Ds951klG.js                            0.59 kB │ gzip:   0.40 kB
+storybook-static/assets/esm-GMbKfeHF.js                                0.66 kB │ gzip:   0.40 kB
+storybook-static/assets/preview-Btd8U_rr.js                            0.68 kB │ gzip:   0.47 kB
+storybook-static/assets/jsx-runtime-DK9haO0v.js                        0.70 kB │ gzip:   0.45 kB
+storybook-static/assets/chunk-XP5HYGXS-Bxb5KTa0.js                     0.71 kB │ gzip:   0.40 kB
+storybook-static/assets/react-18-LmIrss3n.js                           0.82 kB │ gzip:   0.48 kB
+storybook-static/assets/v4-D3SDfb2f.js                                 0.84 kB │ gzip:   0.44 kB
+storybook-static/assets/preview-BRbUYWEe.js                            0.91 kB │ gzip:   0.57 kB
+storybook-static/assets/Login.stories-B-N_Ub2y.js                      1.01 kB │ gzip:   0.55 kB
+storybook-static/assets/styles-Cs--Ew09.js                             1.28 kB │ gzip:   0.70 kB
+storybook-static/assets/animation-B2298MpB.js                          1.37 kB │ gzip:   0.51 kB
+storybook-static/assets/toggleButton.stories-CN2jYMgf.js               2.09 kB │ gzip:   0.88 kB
+storybook-static/assets/preview-BjgT4eRt.js                            2.20 kB │ gzip:   1.01 kB
+storybook-static/assets/Input-CD4-JAZY.js                              2.34 kB │ gzip:   0.89 kB
+storybook-static/assets/preview-CHTIq601.js                            2.60 kB │ gzip:   1.29 kB
+storybook-static/assets/Button.stories-C8sDgTOf.js                     2.93 kB │ gzip:   0.86 kB
+storybook-static/assets/Icon.stories-DGTLasYK.js                       3.01 kB │ gzip:   1.12 kB
+storybook-static/assets/Button-B2XBVdwj.js                             3.26 kB │ gzip:   1.16 kB
+storybook-static/assets/checkBox.stories-Cg9-mzaw.js                   3.44 kB │ gzip:   1.35 kB
+storybook-static/assets/radioButton.stories-8l41z-UR.js                3.56 kB │ gzip:   1.40 kB
+storybook-static/assets/Input.stories-CCMTBX_a.js                      3.97 kB │ gzip:   1.38 kB
+storybook-static/assets/alerts.stories-Drho1FB1.js                     4.15 kB │ gzip:   1.24 kB
+storybook-static/assets/Badge.stories-D5T-Z3f0.js                      4.68 kB │ gzip:   1.36 kB
+storybook-static/assets/preview-DXejSpMV.js                            4.81 kB │ gzip:   1.74 kB
+storybook-static/assets/Card.stories-Zn_TyiVi.js                       5.44 kB │ gzip:   1.33 kB
+storybook-static/assets/Avatar.stories-bp902ZTe.js                     6.03 kB │ gzip:   1.83 kB
+storybook-static/assets/react-DMABRjrH.js                              6.49 kB │ gzip:   2.56 kB
+storybook-static/assets/Link.stories-szb-sz4h.js                       7.54 kB │ gzip:   2.14 kB
+storybook-static/assets/preview-D7P8xNPJ.js                            7.61 kB │ gzip:   1.53 kB
+storybook-static/assets/preview-D0XdcVAG.js                            8.13 kB │ gzip:   3.07 kB
+storybook-static/assets/typography.stories-BnPz2APk.js                11.92 kB │ gzip:   1.19 kB
+storybook-static/assets/test-utils-B655Bv_P.js                        12.07 kB │ gzip:   4.64 kB
+storybook-static/assets/dist--o0L-wSD.js                              12.35 kB │ gzip:   3.73 kB
+storybook-static/assets/StoryLinkWrapper-Drg7X3PO.js                  13.86 kB │ gzip:   5.30 kB
+storybook-static/assets/Button.stories-vM1afeL_.js                    22.35 kB │ gzip:   3.67 kB
+storybook-static/assets/Color-YHDXOIA2-BF5x62sf.js                    28.94 kB │ gzip:  10.67 kB
+storybook-static/assets/matchers-7Z3WT2CE-pbPREfjh.js                 28.99 kB │ gzip:   9.70 kB
+storybook-static/assets/entry-preview-Dih-j2HJ.js                     29.07 kB │ gzip:   8.97 kB
+storybook-static/assets/styled-components.browser.esm-BbFPFCJA.js     33.94 kB │ gzip:  13.27 kB
+storybook-static/assets/docs-tools-CJIWl2kd.js                        55.82 kB │ gzip:  15.67 kB
+storybook-static/assets/react-dom-DufNM1i3.js                        132.71 kB │ gzip:  43.07 kB
+storybook-static/assets/Icon-CqLZGA4j.js                             134.08 kB │ gzip:  48.54 kB
+storybook-static/assets/DocsRenderer-CFRXHY34-DXqTdZaR.js            166.34 kB │ gzip:  50.59 kB
+storybook-static/assets/iframe-7XNP_Itk.js                           212.90 kB │ gzip:  71.60 kB
+storybook-static/assets/entry-preview-docs-CWTn4prc.js               254.55 kB │ gzip:  75.67 kB
+storybook-static/assets/axe-BjqDKagt.js                              569.65 kB │ gzip: 155.47 kB
+storybook-static/assets/dist-CFXHgf6T.js                             647.64 kB │ gzip: 149.57 kB
+storybook-static/assets/preview-BrBqYsNl.js                          649.66 kB │ gzip: 150.55 kB
+storybook-static/assets/components-aQQbb6zj.js                       700.59 kB │ gzip: 218.19 kB
+storybook-static/assets/Test.stories-B-gnpk6M.js                   1,554.28 kB │ gzip: 410.12 kB
+
+[33m[33m[EVAL] Warning:[0m Use of direct `eval` function is strongly discouraged as it poses security risks and may cause issues with minification.
+      [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/@storybook/core/dist/preview/runtime.js:3683:16 [38;5;246m][0m
+      [38;5;246m│[0m
+ [38;5;246m3683 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249mr[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mn[0m[38;5;249m [0meval[38;5;249m([0m[38;5;249m`[0m[38;5;249m([0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249ms[0m[38;5;249mo[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249ma[0m[38;5;249mn[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mz[0m[38;5;249me[0m[38;5;249md[0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m`[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m     │[0m                ──┬─  
+ [38;5;240m     │[0m                  ╰─── Use of direct `eval` here.
+ [38;5;240m     │[0m 
+ [38;5;240m     │[0m [38;5;115mHelp[0m: Consider using indirect eval. For more information, check the documentation: https://rolldown.rs/guide/troubleshooting#avoiding-direct-eval
+[38;5;246m──────╯[0m
+[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[33m[33m[EVAL] Warning:[0m Use of direct `eval` function is strongly discouraged as it poses security risks and may cause issues with minification.
+      [38;5;246m╭[0m[38;5;246m─[0m[38;5;246m[[0m node_modules/@storybook/core/dist/preview/runtime.js:3685:17 [38;5;246m][0m
+      [38;5;246m│[0m
+ [38;5;246m3685 │[0m [38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249m [0m[38;5;249ml[0m[38;5;249me[0m[38;5;249mt[0m[38;5;249m [0m[38;5;249mf[0m[38;5;249m [0m[38;5;249m=[0m[38;5;249m [0meval[38;5;249m([0m[38;5;249m`[0m[38;5;249m([0m[38;5;249m$[0m[38;5;249m{[0m[38;5;249ms[0m[38;5;249mo[0m[38;5;249mu[0m[38;5;249mr[0m[38;5;249mc[0m[38;5;249me[0m[38;5;249mS[0m[38;5;249ma[0m[38;5;249mn[0m[38;5;249mi[0m[38;5;249mt[0m[38;5;249mi[0m[38;5;249mz[0m[38;5;249me[0m[38;5;249md[0m[38;5;249m}[0m[38;5;249m)[0m[38;5;249m`[0m[38;5;249m)[0m[38;5;249m;[0m
+ [38;5;240m     │[0m                 ──┬─  
+ [38;5;240m     │[0m                   ╰─── Use of direct `eval` here.
+ [38;5;240m     │[0m 
+ [38;5;240m     │[0m [38;5;115mHelp[0m: Consider using indirect eval. For more information, check the documentation: https://rolldown.rs/guide/troubleshooting#avoiding-direct-eval
+[38;5;246m──────╯[0m
+[39m
+[31m✗[39m Build failed in 4.57s
+[38;2;241;97;97m=> Failed to build the preview[39m
+[31mBuild failed with 1 error:
+
+Error: [vite]: Rolldown failed to resolve import "prop-types" from "./src/templates/login/Login.jsx".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`
+    at viteLog (file://./node_modules/vite/dist/node/chunks/node.js:32942:57)
+    at file://./node_modules/vite/dist/node/chunks/node.js:32978:71
+    at onwarn (file://./node_modules/@vitejs/plugin-react/dist/index.js:40:7)
+    at file://./node_modules/vite/dist/node/chunks/node.js:32978:28
+    at onRollupLog (file://./node_modules/vite/dist/node/chunks/node.js:32973:63)
+    at onLog (file://./node_modules/vite/dist/node/chunks/node.js:32743:4)
+    at file://./node_modules/rolldown/dist/shared/rolldown-build-CPrIX9V6.mjs:49:26
+    at logger (file://./node_modules/rolldown/dist/shared/rolldown-build-CPrIX9V6.mjs:40:3)
+    at onLog (file://./node_modules/rolldown/dist/shared/bindingify-input-options-e7ze4hPR.mjs:1972:32)[39m
+    at aggregateBindingErrorsIntoJsError (file://./node_modules/rolldown/dist/shared/error-BLhcSyeg.mjs:48:18)
+    at unwrapBindingResult (file://./node_modules/rolldown/dist/shared/error-BLhcSyeg.mjs:18:128)
+    at #build (file://./node_modules/rolldown/dist/shared/rolldown-build-CPrIX9V6.mjs:3313:34)
+    at async buildEnvironment (file://./node_modules/vite/dist/node/chunks/node.js:32849:64)
+    at async Object.build (file://./node_modules/vite/dist/node/chunks/node.js:33271:19)
+    at async build (./node_modules/@storybook/builder-vite/dist/index.js:80:230)
+    at async Promise.all (index 0)
+    at async buildStaticStandalone (./node_modules/@storybook/core/dist/core-server/index.cjs:36981:3)
+    at async withTelemetry (./node_modules/@storybook/core/dist/core-server/index.cjs:37269:12)
+    at async build (./node_modules/@storybook/core/dist/cli/bin/index.cjs:5837:3)
+    at async s.<anonymous> (./node_modules/@storybook/core/dist/cli/bin/index.cjs:6072:7)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

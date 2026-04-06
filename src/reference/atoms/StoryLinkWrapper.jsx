@@ -1,10 +1,8 @@
-/* eslint-disable import/no-extraneous-dependencies */
-// This is allows us to test whether the link works via the actions addon
+// This replaces the storybook action addon for mocked functions
 import React from 'react';
 import PropTypes from 'prop-types';
-import { action } from '@storybook/addon-actions';
 
-const fireClickAction = action('onLinkClick');
+const fireClickAction = (href) => console.log('onLinkClick', href);
 
 export function StoryLinkWrapper({ children, className, href, onClick, to, ...rest }) {
   const modifiedOnClick = event => {

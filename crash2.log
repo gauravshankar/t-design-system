@@ -1,0 +1,365 @@
+yarn run v1.22.22
+$ storybook build
+
+[90m┌[39m  Building storybook v10.3.4
+[90m│[39m
+[32m◇[39m  Cleaning outputDir: [36mstorybook-static[39m
+[90m│[39m
+[32m◇[39m  Loading presets
+[90m│[39m
+[32m◇[39m  Building manager..
+(node:30851) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///Users/nitigoel/Desktop/git/t-design-system/.storybook/main.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /Users/nitigoel/Desktop/git/t-design-system/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[90m│[39m
+[34m●[39m  Building preview..
+[90m│[39m  [43mVite[49m [36mvite v8.0.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...[90m│[39m
+[34m●[39m  Copying static files: [36mpublic[39m at [36mstorybook-static[39m
+
+warn - Tailwind is not purging unused styles because no template paths have been provided.
+warn - If you have manually configured PurgeCSS outside of Tailwind or are deliberately not removing unused styles, set `purge: false` in your Tailwind config file to silence this warning.
+warn - https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/macro.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "fs" has been externalized[39m
+[90m│[39m  [33mfor browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/macro.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/babel-plugin-macros/dist/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "os" has been externalized[39m
+[90m│[39m  [33mfor browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/Explorer.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/ExplorerSync.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "fs" has been externalized[39m
+[90m│[39m  [33mfor browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/sync.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/sync.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "fs" has been externalized[39m
+[90m│[39m  [33mfor browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/async.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/async.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "fs" has been externalized[39m
+[90m│[39m  [33mfor browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/readFile.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/ExplorerBase.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/twin.macro/node_modules/cosmiconfig/dist/getDirectory.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve/lib/node-modules-paths.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/import-fresh/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/tailwindcss/node_modules/postcss/lib/input.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "fs" has been externalized[39m
+[90m│[39m  [33mfor browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/path-type/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "util" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/path-type/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve-from/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "module" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve-from/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "fs" has been externalized[39m
+[90m│[39m  [33mfor browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/resolve-from/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "util" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/error-ex/index.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/tailwindcss/node_modules/postcss/lib/previous-map.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/tailwindcss/node_modules/postcss/lib/map-generator.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-nested/node_modules/postcss/lib/input.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-js/node_modules/postcss/lib/input.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-nested/node_modules/postcss/lib/previous-map.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-nested/node_modules/postcss/lib/map-generator.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-js/node_modules/postcss/lib/previous-map.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin rolldown:vite-resolve] Module "path" has been[39m
+[90m│[39m  [33mexternalized for browser compatibility, imported by[39m
+[90m│[39m  [33m"/Users/nitigoel/Desktop/git/t-design-system/node_modules/postcss-js/node_modules/postcss/lib/map-generator.js".[39m
+[90m│[39m  [33mSee[39m
+[90m│[39m  [33m]8;;https://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibilityhttps://vite.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility]8;;[39m
+[90m│[39m  [33mfor more details.[39m
+✓ 666 modules transformed.
+rendering chunks...
+computing gzip size...
+[90m│[39m  [43mVite[49m storybook-static/iframe.html
+[90m│[39m  18.47 kB │ gzip:   5.31 kB
+[90m│[39m  storybook-static/assets/iframe-BBVV3Zcf.css               3,448.45 kB
+[90m│[39m  │ gzip: 331.92 kB
+[90m│[39m  storybook-static/assets/prop-types-DfIa6Bbe.js                0.80 kB
+[90m│[39m  │ gzip:   0.50 kB
+[90m│[39m  storybook-static/assets/Login.stories-CJv-JlOI.js             1.03 kB
+[90m│[39m  │ gzip:   0.57 kB
+[90m│[39m  storybook-static/assets/chunk-zsgVPwQN.js                     1.20 kB
+[90m│[39m  │ gzip:   0.66 kB
+[90m│[39m  storybook-static/assets/preload-helper-D_VTBiTN.js            1.27 kB
+[90m│[39m  │ gzip:   0.73 kB
+[90m│[39m  storybook-static/assets/animation-CzbyA2xg.js                 1.40 kB
+[90m│[39m  │ gzip:   0.53 kB
+[90m│[39m  storybook-static/assets/toggleButton.stories-DWE2x24Q.js      2.20 kB
+[90m│[39m  │ gzip:   0.92 kB
+[90m│[39m  storybook-static/assets/Input-DQMV2W4f.js                     2.45 kB
+[90m│[39m  │ gzip:   0.91 kB
+[90m│[39m  storybook-static/assets/Button.stories-CDxFNIxK.js            2.93 kB
+[90m│[39m  │ gzip:   0.85 kB
+[90m│[39m  storybook-static/assets/Icon.stories-DpTG0osj.js              2.98 kB
+[90m│[39m  │ gzip:   1.11 kB
+[90m│[39m  storybook-static/assets/Button-4lhgep-7.js                    3.38 kB
+[90m│[39m  │ gzip:   1.19 kB
+[90m│[39m  storybook-static/assets/checkBox.stories-D5MHMYyA.js          3.58 kB
+[90m│[39m  │ gzip:   1.39 kB
+[90m│[39m  storybook-static/assets/radioButton.stories-BCT6IHV9.js       3.70 kB
+[90m│[39m  │ gzip:   1.45 kB
+[90m│[39m  storybook-static/assets/Input.stories-BaIw4ppy.js             4.09 kB
+[90m│[39m  │ gzip:   1.44 kB
+[90m│[39m  storybook-static/assets/alerts.stories-B6KNbY4T.js            4.25 kB
+[90m│[39m  │ gzip:   1.29 kB
+[90m│[39m  storybook-static/assets/Badge.stories-BcHr4Axn.js             4.69 kB
+[90m│[39m  │ gzip:   1.38 kB
+[90m│[39m  storybook-static/assets/Card.stories-JyCpzgQS.js              5.60 kB
+[90m│[39m  │ gzip:   1.42 kB
+[90m│[39m  storybook-static/assets/Avatar.stories-CLuPNc_e.js            6.07 kB
+[90m│[39m  │ gzip:   1.87 kB
+[90m│[39m  storybook-static/assets/Link.stories-mUZo3F-Y.js              7.69 kB
+[90m│[39m  │ gzip:   2.25 kB
+[90m│[39m  storybook-static/assets/StoryLinkWrapper-DqdmzrcY.js         11.39 kB
+[90m│[39m  │ gzip:   4.20 kB
+[90m│[39m  storybook-static/assets/typography.stories-RYyRRvUO.js       11.91 kB
+[90m│[39m  │ gzip:   1.18 kB
+[90m│[39m  storybook-static/assets/Button.stories-D71L3fN6.js           22.48 kB
+[90m│[39m  │ gzip:   3.74 kB
+[90m│[39m  storybook-static/vite-inject-mocker-entry.js                 27.85 kB
+[90m│[39m  │ gzip:   9.64 kB
+[90m│[39m  storybook-static/assets/matchers-5TDFFDYO-7EwuY4Y7.js        28.81 kB
+[90m│[39m  │ gzip:   9.67 kB
+[90m│[39m  storybook-static/assets/Icon-BmZNJjER.js                    134.12 kB
+[90m│[39m  │ gzip:  48.56 kB
+[90m│[39m  storybook-static/assets/react-18-fdgP3GWm.js                189.97 kB
+[90m│[39m  │ gzip:  59.84 kB
+[90m│[39m  storybook-static/assets/axe-DngaAs08.js                     569.64 kB
+[90m│[39m  │ gzip: 155.47 kB
+[90m│[39m  storybook-static/assets/iframe-D4PQndaS.js                1,198.43 kB
+[90m│[39m  │ gzip: 346.18 kB
+[90m│[39m  storybook-static/assets/Test.stories-MNWy9-4A.js          1,519.84 kB
+[90m│[39m  │ gzip: 400.81 kB
+
+[90m│[39m
+[33m▲[39m  [43mVite[49m [33m[plugin builtin:vite-reporter]
+[90m│[39m  (!) Some chunks are larger than 500 kB after minification. Consider:
+[90m│[39m  - Using dynamic import() to code-split the application
+[90m│[39m  - Use build.rolldownOptions.output.codeSplitting to improve chunking:
+[90m│[39m  ]8;;https://rolldown.rs/reference/OutputOptions.codeSplittinghttps://rolldown.rs/reference/OutputOptions.codeSplitting]8;;
+[90m│[39m  - Adjust chunk size limit for this warning via
+[90m│[39m  build.chunkSizeWarningLimit.[39m
+[90m│[39m
+[31m■[39m  [43mVite[49m [31m✗[39m Build failed in 5.35s
+[90m│[39m
+[31m■[39m  Failed to build the preview
+[90m│[39m
+[31m■[39m  [31mBuild failed with 1 error:
+
+[90m│[39m  Error: [vite]: Rolldown failed to resolve import
+[90m│[39m  "@storybook/addon-actions" from
+[90m│[39m  "./src/reference/atoms/StoryLinkWrapper.jsx".
+[90m│[39m  This is most likely unintended because it can break your application
+[90m│[39m  at runtime.
+[90m│[39m  If you do want to externalize this module explicitly add it to
+[90m│[39m  `build.rollupOptions.external`
+[90m│[39m  at viteLog
+[90m│[39m  (file://./node_modules/vite/dist/node/chunks/node.js:32942:57)
+[90m│[39m  at file://./node_modules/vite/dist/node/chunks/node.js:32978:71
+[90m│[39m  at onwarn
+[90m│[39m  (file://./node_modules/@vitejs/plugin-react/dist/index.js:40:7)
+[90m│[39m  at file://./node_modules/vite/dist/node/chunks/node.js:32978:28
+[90m│[39m  at onRollupLog
+[90m│[39m  (file://./node_modules/vite/dist/node/chunks/node.js:32973:63)
+[90m│[39m  at onLog (file://./node_modules/vite/dist/node/chunks/node.js:32743:4)
+[90m│[39m  at
+[90m│[39m  file://./node_modules/rolldown/dist/shared/rolldown-build-CPrIX9V6.mjs:49:26
+[90m│[39m  at logger
+[90m│[39m  (file://./node_modules/rolldown/dist/shared/rolldown-build-CPrIX9V6.mjs:40:3)
+[90m│[39m  at onLog
+[90m│[39m  (file://./node_modules/rolldown/dist/shared/bindingify-input-options-e7ze4hPR.mjs:1972:32)[39m
+[90m│[39m  at aggregateBindingErrorsIntoJsError
+[90m│[39m  (file://./node_modules/rolldown/dist/shared/error-BLhcSyeg.mjs:48:18)
+[90m│[39m  at unwrapBindingResult
+[90m│[39m  (file://./node_modules/rolldown/dist/shared/error-BLhcSyeg.mjs:18:128)
+[90m│[39m  at #build
+[90m│[39m  (file://./node_modules/rolldown/dist/shared/rolldown-build-CPrIX9V6.mjs:3313:34)
+[90m│[39m  at async buildEnvironment
+[90m│[39m  (file://./node_modules/vite/dist/node/chunks/node.js:32849:64)
+[90m│[39m  at async Object.build
+[90m│[39m  (file://./node_modules/vite/dist/node/chunks/node.js:33271:19)
+[90m│[39m  at async build
+[90m│[39m  (file://./node_modules/@storybook/builder-vite/dist/index.js:1508:290)
+[90m│[39m  at async Promise.all (index 0)
+[90m│[39m  at async buildStaticStandalone
+[90m│[39m  (file://./node_modules/storybook/dist/core-server/index.js:6498:7)
+[90m│[39m  at async withTelemetry
+[90m│[39m  (file://./node_modules/storybook/dist/_node-chunks/chunk-HUYNFPPD.js:225:12)
+[90m│[39m  at async build
+[90m│[39m  (file://./node_modules/storybook/dist/bin/core.js:2679:3)
+[90m│[39m  at async _Command.<anonymous>
+[90m│[39m  (file://./node_modules/storybook/dist/bin/core.js:2824:7)
+[90m│[39m
+[90m└[39m  Storybook exited with an error
+
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

@@ -1,0 +1,2 @@
+#!/bin/sh
+yarn build && yarn build-storybook && yarn build-storybook-docs
